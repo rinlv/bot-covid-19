@@ -1,0 +1,5 @@
+botbuilder-integration-aiohttp>=4.7.0
+requests==2.22.0
+beautifulsoup4
+gunicorn
+APScheduler==3.0.0

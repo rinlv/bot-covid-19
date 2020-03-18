@@ -1,0 +1,70 @@
+﻿{
+    "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.5/MicrosoftTeams.schema.json",
+    "manifestVersion": "1.5",
+    "version": "1.0.0",
+    "id": "d01a2a38-6486-4230-9d94-a439a210e2b5",
+    "packageName": "com.teams.bot.covid19",
+    "developer": {
+      "name": "SARS-CoV-2",
+      "websiteUrl": "https://www.microsoft.com",
+      "privacyUrl": "https://www.teams.com/privacy",
+      "termsOfUseUrl": "https://www.teams.com/termsofuser"
+    },
+    "icons": {
+      "outline": "icon-outline.png",
+      "color": "icon-color.png"
+    },
+    "name": {
+      "short": "SARS-CoV-2",
+      "full": "SARS-CoV-2"
+    },
+    "description": {
+      "short": "SARS-CoV-2",
+      "full": "SARS-CoV-2"
+    },
+    "accentColor": "#FFFFFF",
+    "bots": [
+      {
+        "botId": "d01a2a38-6486-4230-9d94-a439a210e2b5",
+        "scopes": [
+          "personal",
+          "groupchat",
+          "team"
+        ],
+        "supportsFiles": false,
+        "isNotificationOnly": false,
+        "commandLists": [
+          {
+            "scopes": [
+              "personal",
+              "groupchat",
+              "team"
+            ],
+            "commands": [
+              {
+                "title": "news",
+                "description": "Hiển thị tin tức mới nhất về COVID-19"
+              },
+              {
+                "title": "world",
+                "description": "Hiển thị số ca nhiễm trên thế giới"
+              },
+              {
+                "title": "all",
+                "description": "Hiển thị danh sách các nước ghi nhận ca nhiễm COVID-19"
+              },
+              {
+                "title": "*country*",
+                "description": "Hiển thị thông tin ca nhiễm COVID-19 theo tên nước (Eng)"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "permissions": [
+      "identity",
+      "messageTeamMembers"
+    ],
+    "validDomains": []
+  }
